@@ -363,13 +363,48 @@
             </div>   
                 
         </footer>
-        <div class="backdrop is-hidden" data-modal>
+        <div class="backdrop " data-modal>
             <div class="modal">
                 <button type="button" data-modal-close class="modal-button">
                     <svg class="modal-close" >
                         <use href="./images/symbol-defs.svg#icon-x"></use>
                     </svg>
                 </button>
+                <h3 class="modal-title">Leave your contacts and we will call you back</h3>
+                <div class="modal-form-group">
+                    <form class="modal-form form">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <span>Name</span>
+                                <input type="text" class="form-input" name="fullname">
+                                <svg class="form-icon" width="18px" height="18px">
+                                    <use href="./images/symbol-defs.svg#icon-person">
+                                    </use>
+                                </svg>
+                            </label>
+                    </div>
+                        <Label class="form-label">
+                            <span>Phone</span>
+                            <input type="tel" class="form-input" name="phone">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                        </Label>
+                        <label class="form-label">
+                            <span>Email</span>
+                            <input type="email" class="form-input" name="emaile">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/symbol-defs.svg#icon-email"></use>
+                            </svg>
+                        </label>
+                        <label class="form-label"><span>Comment</span>
+                            <textarea name="" class="texteria-form" id="" cols="30" rows="10" ></textarea>
+                        </label>
+                        
+                        <button type="submit" class="form-btn">Send</button>
+
+                    </form>
+                </div>
             </div>
         </div>
         <script src="./js/modal.js"></script>
