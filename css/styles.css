@@ -831,7 +831,8 @@ ul{
 }
 .modal {
     width: 408px;
-    height: 576px;
+    height: 584px;
+    
     background-color: var(--white);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -898,13 +899,19 @@ ul{
     height: 40px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    padding: 8px 16px;
-    margin-bottom: 8px;
+    padding: 8px 16px 8px 38px;
+    outline: transparent;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+   
+  
+
     
 }
 
-.texteria-form {
-}
+
 .form-btn {
     display: block;
     width: 169px;
@@ -916,12 +923,15 @@ ul{
     margin-left: auto;
     margin-right: auto;
     border: transparent;
+    margin-top: 24px;
+  
 }
 
 .form-label{
-    display: block;
     color: #8E8F99;
-    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+   
 }
 
 .form-icon{
@@ -929,12 +939,90 @@ ul{
     fill: #2E2F42;
     position: absolute;
     top: 50%;
-    transform: translateY(50%);
+    transform: translateY(-50%);
+    transform: translateX(16px);
+     transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
     
 }
 
 .form-group{
     position: relative;
+    margin-bottom: 8px;
 }
+
+.form-input:focus{
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+   
+}
+
+.form-input:focus +.form-icon{
+    fill: #4D5AE5;
+}
+
+.texteria-form {
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    resize: none;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    outline: transparent;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1) ;
+    margin-bottom: 16px;
+}
+
+.texteria-form ::placeholder{
+    color: rgba(46, 47, 66, 0.4);
+
+}
+
+.texteria-form:focus{
+    border: 1px solid #4D5AE5;
+    border-radius: 4px;
+   
+}
+
+.texteria-form:focus +.form-icon{
+    fill: #4D5AE5;
+}
+
+.checkbox-span{
+   color: #4D5AE5;
+   text-decoration-line: underline;
+}
+
+.check-label{
+    display: flex;
+    align-items: center;
+
+}
+
+.check-label::before{
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-left: 0px;
+    margin-right: 8px;
+
+}
+
+.modal-checkbox:checked +.check-label::before{
+    background-color: #404BBF;
+    border: 1px solid #404BBF;
+    border-radius: 2px;
+
+
+}
+
+
 
 /*-----/cards-------*/

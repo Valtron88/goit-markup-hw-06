@@ -371,40 +371,51 @@
                     </svg>
                 </button>
                 <h3 class="modal-title">Leave your contacts and we will call you back</h3>
-                <div class="modal-form-group">
-                    <form class="modal-form form">
-                        <div class="form-group">
-                            <label class="form-label">
-                                <span>Name</span>
-                                <input type="text" class="form-input" name="fullname">
-                                <svg class="form-icon" width="18px" height="18px">
-                                    <use href="./images/symbol-defs.svg#icon-person">
-                                    </use>
-                                </svg>
-                            </label>
+                <form class="modal-form form">
+                    <div class="form-group">
+                        <label class="form-label">
+                            <span class="span-form">Name</span>
+                            <input type="text" class="form-input" name="fullname">
+                            <svg class="form-icon" width="18px" height="18px">
+                                <use href="./images/symbol-defs.svg#icon-person">
+                                </use>
+                            </svg>
+                        </label>
                     </div>
+                    <div class="form-group">
                         <Label class="form-label">
-                            <span>Phone</span>
+                            <span class="span-form">Phone</span>
                             <input type="tel" class="form-input" name="phone">
                             <svg class="form-icon" width="18px" height="18px">
                                 <use href="./images/symbol-defs.svg#icon-phone"></use>
                             </svg>
                         </Label>
+                    </div>
+                    <div class="form-group">
                         <label class="form-label">
-                            <span>Email</span>
+                            <span class="span-form">Email</span>
                             <input type="email" class="form-input" name="emaile">
                             <svg class="form-icon" width="18px" height="18px">
                                 <use href="./images/symbol-defs.svg#icon-email"></use>
                             </svg>
                         </label>
-                        <label class="form-label"><span>Comment</span>
-                            <textarea name="" class="texteria-form" id="" cols="30" rows="10" ></textarea>
-                        </label>
-                        
-                        <button type="submit" class="form-btn">Send</button>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label"><span class="span-form">Comment</span>
+                            <textarea name="comment" class="texteria-form" placeholder="Text input" ></textarea>
+                        </label>    
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox"id="checkbox-icon" name="checkbox" class="modal-checkbox visual-hidden">
+                        <label for ="checkbox-icon" class="form-label check-label "><span >I accept the terms and conditions of the <span class="checkbox-span">Privacy Policy</span></label>                         
+                    </div>
+                    
+                    
+                    
+                    <button type="submit" class="form-btn">Send</button>
 
-                    </form>
-                </div>
+                </form>
+                
             </div>
         </div>
         <script src="./js/modal.js"></script>
