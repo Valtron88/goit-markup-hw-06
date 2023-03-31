@@ -636,8 +636,86 @@ ul{
 .footer-social-link:focus,
 .footer-social-link:hover{
     background-color: var(--green);
+
+}
+
+.footer-form {
+    display: flex;
+
+}
+.footer-form-group {
+    
+}
+.footer-label {
+    
+}
+.footer-span {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 16px;
+    color: var(--white);
+    margin-left: 80px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.footer-input {
+    margin-left: 80px;
+    margin-right: 24px;
+    width: 264px;
+    height: 40px;
+    border: 1px solid var(--white);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: var(--white);
+    padding: 8px 16px;
+    outline: none;
+    
+}
+.footer-btn {
+    display: flex;
+    margin-right: auto;
+    width: 165px;
+    height: 40px;
+    margin-top: 40px;
+    background: var(--fiolet);
+    border-radius: 4px;
+    color: var(--white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height:1.5;
+    align-items: center;
+    border: transparent;
+    padding: 8px 24px;
+    cursor: pointer;
     
    
+}
+
+.footer-btn-icon{
+    display: flex;
+    fill: var(--white);
+    align-items: center;
+    margin-left: auto;
+}
+
+
+    
+
+    
+
+
+
+
+
+.footer-form ::placeholder{
+    
+    content: "";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    color: var(--white);
 
 }
 
@@ -924,6 +1002,7 @@ ul{
     margin-right: auto;
     border: transparent;
     margin-top: 24px;
+    cursor: pointer;
   
 }
 
@@ -962,6 +1041,11 @@ ul{
     fill: #4D5AE5;
 }
 
+.span-form{
+    display: block;
+    margin-bottom: 4px;
+}
+
 .texteria-form {
     display: block;
     width: 100%;
@@ -978,6 +1062,7 @@ ul{
 }
 
 .texteria-form ::placeholder{
+    content: "";
     color: rgba(46, 47, 66, 0.4);
 
 }
@@ -992,7 +1077,7 @@ ul{
     fill: #4D5AE5;
 }
 
-.checkbox-span{
+.checkbox-link{
    color: #4D5AE5;
    text-decoration-line: underline;
 }
@@ -1004,7 +1089,6 @@ ul{
 }
 
 .check-label::before{
-    display: block;
     content: "";
     width: 16px;
     height: 16px;
@@ -1012,15 +1096,56 @@ ul{
     border-radius: 2px;
     margin-left: 0px;
     margin-right: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 
 }
 
-.modal-checkbox:checked +.check-label::before{
+.modal-checkbox:checked + .check-label::before {
     background-color: #404BBF;
     border: 1px solid #404BBF;
     border-radius: 2px;
+    background-image: url(../images/Vector\ \(1\).svg);
+    background-repeat: no-repeat;
+    background-position: center;
+   
 
 
+}
+
+/*.check-label span{
+    display: block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    margin-left: 0px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    fill: transparent;
+
+}*/
+
+/*.modal-checkbox:checked + .check-label span{
+    fill: #FFFFFF;
+}*/
+.checkbox-span-yes{
+
+}
+
+.checkbox-span-icon {
+}
+.checkbox-icon-svg {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.checkbox-link{
+    margin-left: 4px;
 }
 
 
