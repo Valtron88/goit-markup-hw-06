@@ -1007,7 +1007,7 @@ ul{
 }
 
 .form-label{
-    color: #8E8F99;
+    color: var(--customer);
     font-size: 12px;
     line-height: 1.16;
    
@@ -1015,10 +1015,8 @@ ul{
 
 .form-icon{
     display: block;
-    fill: #2E2F42;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
     transform: translateX(16px);
      transition-property: fill;
     transition-duration: 250ms;
@@ -1032,13 +1030,13 @@ ul{
 }
 
 .form-input:focus{
-    border: 1px solid #4D5AE5;
+    border: 1px solid var(--fiolet);
     border-radius: 4px;
    
 }
 
 .form-input:focus +.form-icon{
-    fill: #4D5AE5;
+    fill: var(--fiolet);
 }
 
 .span-form{
@@ -1068,17 +1066,17 @@ ul{
 }
 
 .texteria-form:focus{
-    border: 1px solid #4D5AE5;
+    border: 1px solid var(--fiolet);
     border-radius: 4px;
    
 }
 
 .texteria-form:focus +.form-icon{
-    fill: #4D5AE5;
+    fill: var(--fiolet);
 }
 
 .checkbox-link{
-   color: #4D5AE5;
+   color: var(--fiolet);
    text-decoration-line: underline;
 }
 
@@ -1088,8 +1086,7 @@ ul{
 
 }
 
-.check-label::before{
-    content: "";
+.check-label span{
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1098,39 +1095,23 @@ ul{
     margin-right: 8px;
     display: flex;
     align-items: center;
-    cursor: pointer;
+    justify-content: center;
+    fill: transparent;   
+    cursor:pointer; 
+    transition-property:background-color, border, fill ;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.modal-checkbox:checked + .check-label::before {
-    background-color: #404BBF;
-    border: 1px solid #404BBF;
+.modal-checkbox:checked + .check-label span{
+    background-color: var(--ocean);
+    border: 1px solid var(--ocean);
     border-radius: 2px;
-    background-image: url(../images/Vector\ \(1\).svg);
-    background-repeat: no-repeat;
-    background-position: center;
-   
-
+    fill: var(--white);
 
 }
 
-/*.check-label span{
-    display: block;
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgba(46, 47, 66, 0.4);
-    border-radius: 2px;
-    margin-left: 0px;
-    margin-right: 8px;
-    display: flex;
-    align-items: center;
-    fill: transparent;
-
-}*/
-
-/*.modal-checkbox:checked + .check-label span{
-    fill: #FFFFFF;
-}*/
 .checkbox-span-yes{
 
 }
@@ -1138,9 +1119,7 @@ ul{
 .checkbox-span-icon {
 }
 .checkbox-icon-svg {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+ 
 
 }
 
