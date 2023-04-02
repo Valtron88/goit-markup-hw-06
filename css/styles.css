@@ -1030,18 +1030,19 @@ ul{
 
 
 .form-label{
-    display: block;
+
     color: var(--customer);
     font-size: 12px;
     line-height: 1.16;
     position: relative;
-    margin-bottom: 8px;
+   
     
    
 }
 
 .form-input-group{
     position: relative;
+    margin-bottom: 8px;
 
 }
 
@@ -1064,11 +1065,12 @@ ul{
 
 .form-group{
     
-    margin-bottom: 8px;
+   
 }
 
 .form-check-group{
     position: relative;
+    
 
 }
 
@@ -1153,6 +1155,10 @@ ul{
     border-radius: 2px;
     fill: var(--white);
 
+}
+
+.checkbox-span{
+   
 }
 
 .checkbox-span-yes{
